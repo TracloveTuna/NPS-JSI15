@@ -1,50 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/register.css">
+
 </head>
+
 <body>
-    <!-- xây dựng đăng ký -->
-<div class="register-container">
+  <!-- Xây dựng trang đăng nhập -->
+  <div class="login-container">
     <div class="aside-right">
-        <div class="header">
-            <h3>MindX chat</h3>
+      <div class="header">
+        <h3>MindX chat</h3>
+      </div>
+
+      <form id="login-form">
+
+        <div class="input-wrapper">
+          <input type="email" name="email" placeholder="Input email ...">
+          <div class="error" id="email-error"></div>
         </div>
 
-        <form id="register-form">
-            <div class="input-name-wrapper">
-                <div class="input-wrapper">
-                    <input type="text" name="firstName" placeholder="First Name">
-                    <div class="error" id="first-name-error"></div>
+        <div class="input-wrapper">
+          <input type="password" name="password" placeholder="input password ....">
+          <div class="error" id="password-error"></div>
+        </div>
 
-                </div>
-                <div class="input-wrapper">
-                    <input type="text" name="lastName" placeholder="Last name">
-                    <div class="error" id="last-name-error"></div>
-                </div>
-            </div>
-            
-            <div class="input-wrapper">
-                <input type="email" name="email" placeholder="Input Email">
-                <div class="error" id="email-error"></div>
-            </div>
+        <div class="form-action">
+          <span class="cursor" id="redirect-to-register">
+            Don't have an account? Register
+          </span>
 
-            <div class="input-wrapper">
-                <input type="password" name="password" placeholder="input password...">
-                <div class="error" id="password-error"></div>
-            </div>
+          <button class="btn" type="submit">
+            login
+          </button>
+        </div>
 
-            <div class="input-wrapper">
-                <input type="password" name="confirmPassword" placeholder="input confirm password">
-                <div class="error" id="confirm-password-error"></div>
-            </div>
-
-        </form>
+      </form>
     </div>
-</div>
-
+  </div>
 
 </body>
+
 </html>
