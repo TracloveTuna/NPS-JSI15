@@ -1,0 +1,12 @@
+.login-container {
+    display: flex;
+    justify-items: center;
+
+    background-color:chartreuse;
+    height: 200px;
+}
+
+.login-title{
+    display: flex;
+    
+}
